@@ -1,0 +1,56 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-17f38f0c06d-517c4fe244ba6ad2": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "db_wishList_backend",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "db_wishList_backend",
+				"url": "jdbc:postgresql://localhost:5432/db_wishList_backend",
+				"home": "postgresql-x64-14",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"postgres-jdbc-17f38f0c06d-517c4fe244ba6ad2": {
+			"db_wishList_backend": {
+				"public": {
+					"@properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202202280408\"><entities><data-source id=\"postgres-jdbc-17f38f0c06d-517c4fe244ba6ad2\"><entity id=\"1\" name=\"cliente\" fq-name=\"public.cliente\" order=\"0\" x=\"267\" y=\"45\"><path name=\"public\"/><path name=\"db_wishList_backend\"/></entity><entity id=\"2\" name=\"cuenta\" fq-name=\"public.cuenta\" order=\"1\" x=\"23\" y=\"18\"><path name=\"public\"/><path name=\"db_wishList_backend\"/></entity><entity id=\"3\" name=\"historico_lista_deseo\" fq-name=\"public.historico_lista_deseo\" order=\"2\" x=\"19\" y=\"210\"><path name=\"public\"/><path name=\"db_wishList_backend\"/></entity><entity id=\"4\" name=\"lista_deseo\" fq-name=\"public.lista_deseo\" order=\"3\" x=\"263\" y=\"211\"><path name=\"public\"/><path name=\"db_wishList_backend\"/></entity><entity id=\"5\" name=\"producto\" fq-name=\"public.producto\" order=\"4\" x=\"528\" y=\"211\"><path name=\"public\"/><path name=\"db_wishList_backend\"/></entity><entity id=\"6\" name=\"record_wishlist\" fq-name=\"public.record_wishlist\" order=\"5\" x=\"10\" y=\"201\"><path name=\"public\"/><path name=\"db_wishList_backend\"/></entity></data-source></entities><relations><relation name=\"fk4ejpfsimj7rgv5nr994wmstui\" fq-name=\"public.cuenta.fk4ejpfsimj7rgv5nr994wmstui\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/><relation name=\"fkhdxdipkhbsq8jm7pas572ta93\" fq-name=\"public.lista_deseo.fkhdxdipkhbsq8jm7pas572ta93\" type=\"fk\" pk-ref=\"1\" fk-ref=\"4\"/><relation name=\"fktprb7la66b6fgi26to7pwx95l\" fq-name=\"public.lista_deseo.fktprb7la66b6fgi26to7pwx95l\" type=\"fk\" pk-ref=\"5\" fk-ref=\"4\"/></relations></diagram>"
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
